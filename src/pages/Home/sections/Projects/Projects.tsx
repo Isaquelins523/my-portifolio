@@ -17,7 +17,7 @@ const ProjectsSection: React.FC = () => {
             srcImg: "/src/assets/images/hotel-image.jpeg",
             description: "Este projeto é um sistema de gerenciamento de hotéis, onde os usuários podem adicionar, editar e excluir hotéis. Ele foi desenvolvido utilizando React, Node.js e MongoDB.",
             technologies: "Technologies: React.js (usando Vite), Axios para chamadas HTTP, React Router para navegação, Styled-Components para estilização",
-            websiteURL: "https://hotel-interface-5pet6c0gp-isaque-lins-projects.vercel.app/login",
+            websiteURL: "https://hotel-interface-5pet6c0gp-isaque-lins-projects.vercel.app",
             codeURL: "https://github.com/Isaquelins523/Hotel_interface",
         },
         {
