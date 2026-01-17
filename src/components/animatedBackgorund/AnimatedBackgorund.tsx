@@ -1,6 +1,12 @@
 import { Box } from "@mui/material"
+import type { ReactNode } from "react"
 
-export const AnimatedBackground = () => {
+interface AnimatedBackgroundProps {
+    children?: ReactNode
+    moveDirection?: "left" | "right"
+}
+
+export const AnimatedBackground = ({ children, moveDirection: _moveDirection }: AnimatedBackgroundProps) => {
     return (
         <Box>
             <svg
@@ -360,6 +366,7 @@ export const AnimatedBackground = () => {
                     </linearGradient>
                 </defs>
             </svg>
+            {children}
         </Box>
     )
 }
