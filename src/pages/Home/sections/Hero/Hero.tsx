@@ -31,17 +31,17 @@ const Hero = () => {
                                 <Box position={"absolute"} width={"150%"} top={"-100"} right={0}>
                                     <AnimatedBackground />
                                 </Box>
-                                <Box position={"absolute"} textAlign={"center"}>
+                                <Box position={"relative"} textAlign={"center"}>
                                 <Styledimg src={Avatar} />
                                 </Box>
                             </Box>
                             
                         </Grid>
                         <Grid item xs={12} md={7}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign="center">Isaque Lins</Typography>
+                            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Isaque Lins</Typography>
                             <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a software engineer</Typography>
 
-                            <Grid container display={"flex"} justifyContent={"center"} spacing={3}>
+                            <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
                                     <StyledButton>
                                         <DownloadIcon />
@@ -49,7 +49,7 @@ const Hero = () => {
                                             Download CV
                                         </Typography>
                                     </StyledButton>                                </Grid>
-                                <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
+                                <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"} >
                                     <StyledButton>
                                         <EmailIcon />
                                         <Typography>
