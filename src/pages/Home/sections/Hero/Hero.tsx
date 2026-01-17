@@ -13,7 +13,7 @@ const Hero = () => {
         backgroundColor: theme.palette.primary.main,
         height: "100vh",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
     }))
     const Styledimg = styled("img")(({theme}) => ({
         width: "80%",
@@ -43,14 +43,14 @@ const Hero = () => {
 
                             <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                    <StyledButton>
+                                    <StyledButton onClick={()=> console.log("Download CV")}>
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
                                         </Typography>
                                     </StyledButton>                                </Grid>
                                 <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"} >
-                                    <StyledButton>
+                                    <StyledButton onClick={()=> console.log("Contact Me")}>
                                         <EmailIcon />
                                         <Typography>
                                             Contact Me

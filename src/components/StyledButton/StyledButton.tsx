@@ -1,8 +1,13 @@
 import { styled } from "@mui/material"
 import type React from "react"
 
+interface StyledButtonProps {
+    children: React.ReactNode
+    onClick?: () => void
+}
 
-const StyledButton = ({children}: {children: React.ReactNode}) => {
+
+const StyledButton = ({children, onClick}: StyledButtonProps) => {
 
     const StyledButton = styled("button")(({theme}) => ({
         backgroundColor: "transparent",
@@ -22,7 +27,7 @@ const StyledButton = ({children}: {children: React.ReactNode}) => {
 
     return (
         <>
-            <StyledButton>{children}</StyledButton>
+            <StyledButton onClick={onClick}>{children}</StyledButton>
         </>
     )
 }
